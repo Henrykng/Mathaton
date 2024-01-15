@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathaton - Sign Up</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="nav-logo" id="Accueil" href="/">
+      <img src="logo.png" class="corner-logo-img">
+    </a>
+    <button type="button" class="menu-button" id="menu-button" onclick="toggleMenu(event)">
+      &#9776;
+    </button>
+    <div class="menu-list">
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/">Nos produits</a></li>
+        <li><a href="/">Nos clients</a></li>
+        <li><a href="/">Nous contacter</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="form" action="/signup" method="POST">
+    <p id="heading">Sign Up</p>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <text x="50%" y="50%" font-size="10" dominant-baseline="middle" text-anchor="middle">Aa</text>
+      </svg>
+
+      <input id="firstname" autocomplete="off" placeholder="First Name" class="input-field" type="text">
+    </div>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <text x="50%" y="50%" font-size="10" dominant-baseline="middle" text-anchor="middle">Aa</text>
+      </svg>
+
+      <input id="lastname" autocomplete="off" placeholder="Last Name" class="input-field" type="text">
+    </div>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <text x="50%" y="50%" font-size="10" dominant-baseline="middle" text-anchor="middle">@</text>
+      </svg>
+
+      <input id="email" autocomplete="off" placeholder="Email" class="input-field" type="text">
+    </div>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.632 7.632c0 3.524-2.958 6.355-6.632 6.355S-0.632 11.156-0.632 7.632C-0.632 4.276 2.021 1.355 5.632 0.707V0.007h2V0.707C11.979 1.355 15.632 4.276 15.632 7.632z">
+        </path>
+        <path
+          d="M7.632 3.007C8.37 3.007 9.076 2.84 9.632 2.582V0.007h2V2.582C13.421 3.918 16 6.773 16 10.135C16 13.632 12.627 16.007 8 16.007S0 13.632 0 10.135C0 6.773 2.579 3.918 6.368 2.582V0.007h2V2.582C6.924 2.84 7.63 3.007 8.368 3.007H7.632z">
+        </path>
+        <path
+          d="M11.632 10.007H4.368V12.007H11.632C11.946 12.007 12.196 12.257 12.196 12.571S11.946 13.136 11.632 13.136H11.448c0 1.654-1.346 3-3 3s-3-1.346-3-3h-0.183C5.046 13.136 4.796 12.887 4.796 12.571S5.046 12.007 5.361 12.007H2.541C1.206 12.007 0 10.801 0 9.464V9.464C0 8.129 1.206 6.924 2.541 6.924H5.361C5.046 6.924 4.796 6.675 4.796 6.36S5.046 5.794 5.361 5.794H5.632V5.576C5.632 5.261 5.881 5.007 6.196 5.007S6.76 5.261 6.76 5.576V5.794H9.232V5.576C9.232 5.261 9.481 5.007 9.796 5.007S10.36 5.261 10.36 5.576V5.794H10.632C10.947 5.794 11.196 6.043 11.196 6.357S10.947 6.924 10.632 6.924H9.232V9.464C9.232 9.779 8.981 10.007 8.666 10.007H7.597C8.177 10.007 8.732 10.221 9.232 10.598V9.464C9.232 9.149 9.481 8.901 9.796 8.901S10.36 9.149 10.36 9.464V10.007z">
+        </path>
+      </svg>
+
+      <input id="birthdate" autocomplete="off" placeholder="Date of Birth" class="input-field" type="date">
+    </div>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z">
+        </path>
+      </svg>
+
+      <input id="password" placeholder="Password" class="input-field" type="password">
+    </div>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z">
+        </path>
+      </svg>
+
+      <input id="confirm-password" placeholder="Confirm Password" class="input-field" type="password">
+    </div>
+    <div class="btn">
+      <button onclick="validateForm()" class="button1">Sign Up</button>
+      <a href="/login.html" class="button2">Already have an account? Login</a>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
